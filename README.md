@@ -25,7 +25,7 @@ In this project, we manually created ElasticNet without using pre-built librarie
 
 ## Q1) What does the model you have implemented do and when should it be used?
   
-Ans :-
+#### Ans :-
 
 In this project, we implemented Linear Regression with ElasticNet Regularization. The ElasticNet model is a combination of L1 (Lasso) and L2 (Ridge) regularization techniques, which helps in preventing overfitting and feature selection in regression problems. The model solves the linear regression problem by minimizing the loss function, while applying both types of regularization to the coefficients. The L1 regularization encourages sparsity, meaning it drives some coefficients to zero, which can be useful for feature selection. On the other hand, L2 regularization discourages large coefficients, helping to handle multicollinearity and preventing overfitting.
 
@@ -40,7 +40,7 @@ You need a balance between the strengths of Lasso (feature selection) and Ridge 
 
 ## Q2) How did you test your model to determine if it is working reasonably correctly?
 
-Ans :-
+#### Ans :-
 
 To evaluate the correctness of our implementation, we employed k-fold cross-validation (5 folds). This method splits the dataset into multiple folds, where the model is trained on k-1 folds and tested on the remaining fold. This process repeats for each fold, ensuring that the model is trained and tested on different subsets of the data. Using cross-validation helps ensure that the model generalizes well and isn't overfitting to one particular train-test split. We measured the performance of the model using two key metrics :-
 
@@ -55,7 +55,7 @@ We also visualized the results by plotting actual vs predicted values and residu
 
 ##  Q3) What parameters have you exposed to users of your implementation in order to tune performance? (Also perhaps provide some basic usage examples.)
 
-Ans :- 
+#### Ans :- 
 
 ### We exposed several parameters to allow users to tune the performance of the ElasticNet model:
 
@@ -74,7 +74,7 @@ These parameters allow users to customize the regularization behavior and optimi
 
 ##  Q4) Are there specific inputs that your implementation has trouble with? Given more time, could you work around these or is it fundamental?
 
-Ans :- 
+#### Ans :- 
 
 Our implementation may face challenges with datasets that exhibit extreme non-linearity or contain a large number of outliers. Since ElasticNet is fundamentally a linear model, it may struggle to fit datasets with strong non-linear relationships. Additionally, sparse datasets or datasets with many missing values might not be handled effectively, as the model assumes complete and well-behaved data.
 
