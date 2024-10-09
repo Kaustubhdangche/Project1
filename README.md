@@ -59,13 +59,13 @@ Ans :-
 
 ### We exposed several parameters to allow users to tune the performance of the ElasticNet model:
 
-### • alpha: Controls the strength of the regularization. Higher values result in stronger regularization, making the model more conservative in selecting features.
+ • alpha: Controls the strength of the regularization. Higher values result in stronger regularization, making the model more conservative in selecting features.
 
-### • l1_ratio: Determines the mix between L1 (Lasso) and L2 (Ridge) regularization. A value closer to 1 emphasizes L1 (more feature selection), while a value closer to 0 emphasizes L2 (more coefficient shrinkage).
+ • l1_ratio: Determines the mix between L1 (Lasso) and L2 (Ridge) regularization. A value closer to 1 emphasizes L1 (more feature selection), while a value closer to 0 emphasizes L2 (more coefficient shrinkage).
 
-### • max_iter: Defines the maximum number of iterations for the optimization process.
+ • max_iter: Defines the maximum number of iterations for the optimization process.
 
-### • tol: Sets the tolerance for determining when the optimization process has converged, providing control over the trade-off between accuracy and computation time.
+ • tol: Sets the tolerance for determining when the optimization process has converged, providing control over the trade-off between accuracy and computation time.
 
 These parameters allow users to customize the regularization behavior and optimize the model for different datasets or use cases.
 
