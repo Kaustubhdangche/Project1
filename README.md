@@ -21,7 +21,7 @@ In this project, we manually created ElasticNet without using pre-built librarie
 
 
 
-### Put your README here. Answer the following questions.
+### Answer the following questions :
 
 ## Q1) What does the model you have implemented do and when should it be used?
   
