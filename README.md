@@ -59,13 +59,13 @@ Ans :-
 
 ### We exposed several parameters to allow users to tune the performance of the ElasticNet model:
 
-• alpha: Controls the strength of the regularization. Higher values result in stronger regularization, making the model more conservative in selecting features.
+### • alpha: Controls the strength of the regularization. Higher values result in stronger regularization, making the model more conservative in selecting features.
 
-• l1_ratio: Determines the mix between L1 (Lasso) and L2 (Ridge) regularization. A value closer to 1 emphasizes L1 (more feature selection), while a value closer to 0 emphasizes L2 (more coefficient shrinkage).
+### • l1_ratio: Determines the mix between L1 (Lasso) and L2 (Ridge) regularization. A value closer to 1 emphasizes L1 (more feature selection), while a value closer to 0 emphasizes L2 (more coefficient shrinkage).
 
-• max_iter: Defines the maximum number of iterations for the optimization process.
+### • max_iter: Defines the maximum number of iterations for the optimization process.
 
-• tol: Sets the tolerance for determining when the optimization process has converged, providing control over the trade-off between accuracy and computation time.
+### • tol: Sets the tolerance for determining when the optimization process has converged, providing control over the trade-off between accuracy and computation time.
 
 These parameters allow users to customize the regularization behavior and optimize the model for different datasets or use cases.
 
@@ -96,14 +96,14 @@ However, some of these challenges are inherent to linear models, and addressing 
 
 #### For this project, we utilized the following Python libraries:
 
-1. Pandas:- 
+#### 1. Pandas:- 
 
 Purpose: Pandas was utilized to handle and alter the dataset, allowing us to load, clean, and preprocess it quickly. It includes data structures like DataFrames, which make it simple to manage tabular data (such as the house price dataset).
 
 Why We Used It: Pandas is great for working with structured data and doing things like reading CSV files, handling missing values, and doing data transformations. Because our project involves regression on a real estate dataset, Pandas was required to prepare the data before feeding it into the model.
 
 
-2) Matplotlib :-
+#### 2) Matplotlib :-
 
 Matplotlib was used to generate visuals, such as scatter plots and histograms, to aid in the analysis of model performance.
 
@@ -181,11 +181,7 @@ These visualizations, created with Matplotlib, are useful for determining how we
 
 
 
-
-
-
-
-
+###  
 
 
 
