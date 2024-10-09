@@ -2,10 +2,10 @@
 
 ## Group Members :-
 
-•	Kaustubh Dangche - A20550806
-•	Anu Singh - A20568373
-•	Hyunsung Ha - A20557555
-•	Nam Gyu Lee - A20487452
+#### •	Kaustubh Dangche - A20550806
+#### •	Anu Singh - A20568373
+#### •	Hyunsung Ha - A20557555
+#### •	Nam Gyu Lee - A20487452
 
 ###
 
