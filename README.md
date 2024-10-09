@@ -23,7 +23,7 @@ In this project, we manually created ElasticNet without using pre-built librarie
 
 ### Put your README here. Answer the following questions.
 
-## * What does the model you have implemented do and when should it be used?
+## Q1) What does the model you have implemented do and when should it be used?
   
 Ans :-
 
@@ -38,7 +38,7 @@ You need a balance between the strengths of Lasso (feature selection) and Ridge 
 
 
 
-## * How did you test your model to determine if it is working reasonably correctly?
+## Q2) How did you test your model to determine if it is working reasonably correctly?
 
 Ans :-
 
@@ -53,7 +53,7 @@ We also visualized the results by plotting actual vs predicted values and residu
 
 
 
-## * What parameters have you exposed to users of your implementation in order to tune performance? (Also perhaps provide some basic usage examples.)
+##  Q3) What parameters have you exposed to users of your implementation in order to tune performance? (Also perhaps provide some basic usage examples.)
 
 Ans :- 
 
@@ -72,7 +72,7 @@ These parameters allow users to customize the regularization behavior and optimi
 
 
 
-## * Are there specific inputs that your implementation has trouble with? Given more time, could you work around these or is it fundamental?
+##  Q4) Are there specific inputs that your implementation has trouble with? Given more time, could you work around these or is it fundamental?
 
 Ans :- 
 
@@ -92,7 +92,7 @@ However, some of these challenges are inherent to linear models, and addressing 
 
 
 
-### Additional Libraries Used:- 
+## Additional Libraries Used:- 
 
 #### For this project, we utilized the following Python libraries:
 
@@ -113,7 +113,7 @@ Why Did We Use It?  :-  Visualizing the model's outputs (e.g., actual versus pre
 ###
 
 
-###  Code Structure and Implementation:-
+##  Code Structure and Implementation:-
 
 #### 1. ElasticNet Class Implementation:-
 
@@ -135,7 +135,7 @@ We used k-fold cross-validation to evaluate the model's performance. This method
 
 
 
-### Code usage:- 
+## Code usage:- 
 
 ##### Example of using the code:
 
@@ -149,19 +149,19 @@ To utilize the model, you will have to:
 
 #### Below is a basic example of how to use the model :-
 
-# Import the model
+#### Import the model
 from my_elasticnet_model import ElasticNet
 
-# Initialize the ElasticNet model with custom parameters
+#### Initialize the ElasticNet model with custom parameters
 model = ElasticNet(alpha=0.5, l1_ratio=0.7, max_iter=1000, tol=1e-4)
 
-# Train the model with training data (X_train and y_train)
+#### Train the model with training data (X_train and y_train)
 model.fit(X_train, y_train)
 
-# Generate predictions on the test data
+#### Generate predictions on the test data
 predictions = model.predict(X_test)
 
-# Evaluate performance using Mean Squared Error (MSE)
+#### Evaluate performance using Mean Squared Error (MSE)
 mse = np.mean((y_test - predictions) ** 2)
 print(f'Mean Squared Error: {mse}')
 
@@ -169,7 +169,20 @@ print(f'Mean Squared Error: {mse}')
 ###
 
 
-###  
+###  Visualisation of Results:-
+
+In addition to training and prediction, we added visualizations to examine the model's performance:
+
+This scatter plot compares the actual and predicted values. If the model is functioning properly, the points should closely follow the identity line (y = x).
+
+The Residual Histogram illustrates the distribution of residuals (the difference between real and expected values). A well-performing model should have residuals centered around zero and no discernible trend.
+
+These visualizations, created with Matplotlib, are useful for determining how well the model matches the data.
+
+
+
+
+
 
 
 
